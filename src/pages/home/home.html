@@ -1,14 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Most I(c)onic Movies
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-header *ngFor="let item of Movies">
+      {{item.Genre}}
+    <ion-item *ngFor="let subItem of Movies.Items">
+      {{subItem.Title}}
+    </ion-item>
+    </ion-header>
+  </ion-list>
 </ion-content>
