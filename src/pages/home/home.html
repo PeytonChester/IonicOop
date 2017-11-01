@@ -10,9 +10,9 @@
   <ion-list>
     <ion-header *ngFor="let item of Movies">
       {{item.Genre}}
+    </ion-header>
     <ion-item *ngFor="let subItem of Movies.Items">
       {{subItem.Title}}
     </ion-item>
-    </ion-header>
   </ion-list>
 </ion-content>
